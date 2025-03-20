@@ -262,7 +262,7 @@ Expand or Collapse
   </summary>
   </summary>
 
-</details>
+
 
 ### Things you need:
 <details>
@@ -270,7 +270,27 @@ Expand or Collapse
 Expand or Collapse
   </summary>
 
-### A USB-C cable to connect the FPGA board to your computer.
+### 1) A USB-C cable connected to the FPGA board to your computer as in the figure below.
+
+![Image](https://github.com/user-attachments/assets/9c39ec69-5831-4b7f-9d69-e550af7a8e97)
+
+### 2) FTDI drivers installed to make sure the board is recognized.
+
+### 3) The required development tools (as mentioned in the datasheet).
+
+</details>
+
+### Steps to make the rgb led make blink:
+<details>
+<summary>
+Expand or Collapse
+  </summary>
+  
+### Step 1: Open terminal in virtual box:
+After opening the terminal this screen will be shown:
+
+photo of opening terminal
 
 
- 
+
+
