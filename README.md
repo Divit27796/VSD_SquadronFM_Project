@@ -165,42 +165,29 @@ Expand or Collapse
 
 ### This file maps the signals in our Verilog code to actual pins on the FPGA. Here’s the mapping along with the role of each connection:
 
-<summary>
-<summary>
 
-### led_red:
-<details>
-<summary>
-Expand or Collapse
-  </summary>
+
+## a) led_red:
+
   
 ### Link of the red led's pcf file:
    https://github.com/thesourcerer8/VSDSquadron_FM/blob/main/led_red/VSDSquadronFM.pcf
 ### 1) FPGA pins: 39
 ### 2) Purpose: Controls the red channel of the RGB LED. The Verilog code sets this pin high or low based on timing logic to turn the red light on or off.
 
-<summary>
-<summary>
 
-### led_blue:
-<details>
-<summary>
-Expand or Collapse
-  </summary>
+## b) led_blue:
+
 
 ### Link of the blue led's pcf file:
    https://github.com/thesourcerer8/VSDSquadron_FM/blob/main/led_blue/VSDSquadronFM.pcf
  ### 1) FPGA pins: 40
  ### 2) Purpose: Controls the blue channel of the RGB LED. The Verilog module manipulates this pin to create blinking or color effects.
 
-<summary>
-<summary>
 
-### led_green:
-<details>
-<summary>
-Expand or Collapse
-  </summary>
+
+## c) led_green:
+
   
 ### Link of the green led's pcf file:
    https://github.com/thesourcerer8/VSDSquadron_FM/blob/main/led_green/VSDSquadronFM.pcf
@@ -208,14 +195,9 @@ Expand or Collapse
  ### 2) Purpose: Controls the green channel of the RGB LED. It works in conjunction with the other two LED pins to mix colors.
 
 
-<summary>
-<summary>
 
-### hw_clk:
-<details>
-<summary>
-Expand or Collapse
-  </summary>
+## d) hw_clk:
+
   
  ### Link of the hw_clk's pcf file:
 https://github.com/thesourcerer8/VSDSquadron_FM/blob/main/led_white/VSDSquadronFM.pcf
@@ -223,28 +205,19 @@ https://github.com/thesourcerer8/VSDSquadron_FM/blob/main/led_white/VSDSquadronF
  ### 1) FPGA pins: 20
  ### 2) Purpose: Receives the clock signal from the onboard oscillator. This signal is crucial for the counter logic in Verilog, which determines LED blinking speed.
 
-<summary>
-<summary>
 
-### testwire:
-<details>
-<summary>
-Expand or Collapse
-  </summary>
+## e) testwire:
+
   
   ### Link of the testwire's pcf file:
    https://github.com/thesourcerer8/VSDSquadron_FM/blob/main/led_white/VSDSquadronFM.pcf
  ### 1) FPGA pins: 17
  ### 2) Purpose: This is an auxiliary output that can be used for debugging. It can carry signals that help monitor internal operations.
 
-  </details>
-  
-### Verilog Code (top.v):
 
-  <details>
-  <summary>
-Expand or Collapse
-  </summary>
+
+ 
+## f) Purpose of Pin Mapping:
   
 ### 1) The LED signals must be assigned correctly to their respective FPGA pins so that they physically control the onboard RGB LED.
 
@@ -253,5 +226,51 @@ Expand or Collapse
 ### 3) The testwire pin can be useful when debugging timing or signal logic, helping to ensure the FPGA is functioning as expected.
 
 ### 4) These mappings were confirmed using the VSDSquadron FPGA Mini Board Datasheet.
+
+
+</details>
+
+### PCF File (VSDSquadronFM.pcf):
+<details>
+<summary>
+Expand or Collapse
+  </summary>
+
+    set_io  led_red	39
+    set_io  led_blue 40
+    set_io  led_green 41
+    set_io  hw_clk 20
+    set_io  testwire 17
+
+### This is the pcf file in the github repo given by you.
+
+### Link of the pcf file:
+https://github.com/thesourcerer8/VSDSquadron_FM/blob/main/led_white/VSDSquadronFM.pcf
+
+
+ </details>
+ </details>
+ 
+
+  
+  
+  
+### Step 3: Setting Up the FPGA Mini Board:
+<details>
+  <summary>
+Expand or Collapse
+  </summary>
+  </summary>
+
+</details>
+
+### Things you need:
+<details>
+<summary>
+Expand or Collapse
+  </summary>
+
+### A USB-C cable to connect the FPGA board to your computer.
+
 
  
