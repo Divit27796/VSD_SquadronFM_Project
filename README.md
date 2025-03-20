@@ -35,7 +35,7 @@ Expand or Collapse
 2) Link of the verilog code:
    https://github.com/thesourcerer8/VSDSquadron_FM/blob/main/led_blue/top.v
 
-   Note: Here I have took blue led for Verilog code.
+### Note: Here I have took blue led for Verilog code.
 
 
  </details>
@@ -154,7 +154,30 @@ Expand or Collapse
 
 ### Note: Here I have took blue led for Verilog code.
 
+
+  </details>
+
+### Pin Mapping and Significance:
+<details>
+<summary>
+Expand or Collapse
+  </summary>
+
+### This file maps the signals in our Verilog code to actual pins on the FPGA. Here’s the mapping along with the role of each connection:
+
+<summary>
+<summary>
+
+### led_red:
+<details>
+<summary>
+Expand or Collapse
+  </summary>
   
+### 1) FPGA pins: 39
+
+### 2) Purpose: Controls the red channel of the RGB LED. The Verilog code sets this pin high or low based on timing logic to turn the red light on or off.
+
 
 
 
