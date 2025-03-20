@@ -236,12 +236,13 @@ Expand or Collapse
    https://github.com/thesourcerer8/VSDSquadron_FM/blob/main/led_white/VSDSquadronFM.pcf
  ### 1) FPGA pins: 17
  ### 2) Purpose: This is an auxiliary output that can be used for debugging. It can carry signals that help monitor internal operations.
- 
- </details>
 
-### Pin Mapping and Significance:
-<details>
-<summary>
+  </details>
+  
+### Verilog Code (top.v):
+
+  <details>
+  <summary>
 Expand or Collapse
   </summary>
   
