@@ -336,8 +336,94 @@ photo of lsusb
  ### Step 4: programming the VSDSquadron FPGA Mini (FM) board:
 
 To program the VSDSquadron FPGA Mini (FM) board, follow these steps:
-Run the following command to clean up previous builds. 
-    
-    make clean
 
-After writing this in terminal the screen will be there like
+1) Run the following command to clean up previous builds:
+    
+
+       make clean  # clears any old build
+   
+
+After writing this in terminal the screen will appear like the picture below.
+
+photo of make clean
+
+2) Build the binaries for the FPGA board using below command the picture below shows the output
+screen after ‘make build‘ command:
+
+       make build   # compiles the design
+
+photo of make build
+
+
+3) Flash the code to the external SRAM with the following command:
+   
+       sudo make flash  # Uploads the code to your FPGA
+   
+ After executing the above command, the screen will look as shown in the picture below.
+
+photo of sudo make flash
+
+</details>
+
+### What you should see after executing the code:
+<details>
+<summary>
+Expand or Collapse
+  </summary>
+
+### 1) The RGB LED should start blinking or changing colors based on your Verilog code.
+    
+### 2) If nothing happens, check your connections, power supply, and pin assignments.
+
+### 3) The board would look like the pictures below after successfully executing the code.
+
+three photos of led blinking
+
+ </details>
+ </details>
+ 
+
+  
+  
+  
+### Step 4: Final notes and troubleshooting:
+<details>
+  <summary>
+Expand or Collapse
+  </summary>
+  </summary>
+
+  ### Quick recap:
+<details>
+<summary>
+Expand or Collapse
+  </summary>
+
+### 1) The Verilog code controls the LED using a built-in clock.
+
+### 2) The PCF file assigns signals to the right FPGA pins.
+
+### 3) The Makeclean, Makebuild, Sudo make flash helps compile and upload the design.
+
+     make clean   # Clears any old builds
+     make build   # Compiles the design
+     sudo make flash   # Uploads the code to your FPGA
+
+   </details>
+
+### Common issuses and how to resolve the issue:
+<details>
+<summary>
+Expand or Collapse
+  </summary>
+
+### 1) Board not detected:
+### Make sure the USB cable is connected and FTDI drivers are installed.
+
+
+### 2) LED not lighting up:
+### Double-check the pin assignments in the PCF file.
+
+### 3) Compilation errors:
+### Ensure all required tools are installed.
+
