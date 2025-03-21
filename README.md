@@ -334,3 +334,10 @@ photo of lsusb
 
 
  ### Step 4: programming the VSDSquadron FPGA Mini (FM) board:
+
+To program the VSDSquadron FPGA Mini (FM) board, follow these steps:
+Run the following command to clean up previous builds. 
+    
+    make clean
+
+After writing this in terminal the screen will be there like
