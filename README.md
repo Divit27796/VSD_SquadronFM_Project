@@ -289,7 +289,7 @@ Expand or Collapse
 ### Step 1: Open terminal in virtual box:
 After opening the terminal this screen will be shown:
 
-photo of opening terminal
+![Image](https://github.com/user-attachments/assets/bd0cb13f-ac75-4975-88bc-05674ef6923c) 
 
 
 ### Step 2: Change to the home directory (‘cd‘):
@@ -307,7 +307,8 @@ c) Move into the ‘blink led‘ directory, which is the first FPGA project to b
 
 After writing the following commands this screen will appear:
 
-photo of these commands
+![Image](https://github.com/user-attachments/assets/56e71394-14aa-46e0-9560-562f2274cb5c) 
+
 
 ### Step 3: Making sure that the board is connected to the computer:
 
@@ -321,7 +322,7 @@ a) Connect the board to your PC, as shown earlier.
 b) On the Virtual Machine, click on "Devices → USB → FTDI Single RS232-HS [J900]" as
 shown in the picture below.
 
-photo of devices of usb
+![Image](https://github.com/user-attachments/assets/dff78185-2d26-4c71-8300-7a8a322d0f80)
 
 ### Step 3: Confirming that the board is connected to the computer:
 
@@ -329,7 +330,7 @@ photo of devices of usb
 1) To confirm if the board is connected to the USB, type the ‘lsusb‘ command in the terminal.
 2) You should see a line stating ”Future Technology Devices International,” as shown in the picture below.
 
-photo of lsusb
+![Image](https://github.com/user-attachments/assets/d01261ed-03c7-44a5-9de3-261b391e31d3)
 
 
 
@@ -345,14 +346,15 @@ To program the VSDSquadron FPGA Mini (FM) board, follow these steps:
 
 After writing this in terminal the screen will appear like the picture below.
 
-photo of make clean
+
+![Image](https://github.com/user-attachments/assets/de48dcb0-cd22-44b2-b7cf-dfe3b845f172)
 
 2) Build the binaries for the FPGA board using below command the picture below shows the output
 screen after ‘make build‘ command:
 
        make build   # compiles the design
 
-photo of make build
+![Image](https://github.com/user-attachments/assets/3db3dd22-20cb-492e-abe4-a3bbad231407)
 
 
 3) Flash the code to the external SRAM with the following command:
@@ -361,7 +363,7 @@ photo of make build
    
  After executing the above command, the screen will look as shown in the picture below.
 
-photo of sudo make flash
+![Image](https://github.com/user-attachments/assets/2fa611d8-ff54-4c53-afbd-af5ed6f69373)
 
 </details>
 
