@@ -292,5 +292,45 @@ After opening the terminal this screen will be shown:
 photo of opening terminal
 
 
+### Step 2: Change to the home directory (‘cd‘):
+
+Write the code below in the terminal to change it to home directory:
+
+    cd
+    cd VSDSquadron_FM
+    cd blink_led
+    
+The commands above allow you to:
+a) Change to the home directory (‘cd‘).
+b) Navigate to the ‘VSDSquadron FM‘ folder, which has a sample project.
+c) Move into the ‘blink led‘ directory, which is the first FPGA project to be tried on VSDSquadron FPGA Mini (FM) board.
+
+After writing the following commands this screen will appear:
+
+photo of these commands
+
+### Step 3: Making sure that the board is connected to the computer:
 
 
+1) There is a preloaded project in ”blink led” directory. To test the project on VSDSquadron
+ FPGA Mini (FM) board, we need to make sure that the board is connected to the Oracle
+Virtual Machine. Perform below steps:
+   
+a) Connect the board to your PC, as shown earlier.
+
+b) On the Virtual Machine, click on "Devices → USB → FTDI Single RS232-HS [J900]" as
+shown in the picture below.
+
+photo of devices of usb
+
+### Step 3: Confirming that the board is connected to the computer:
+
+
+1) To confirm if the board is connected to the USB, type the ‘lsusb‘ command in the terminal.
+2) You should see a line stating ”Future Technology Devices International,” as shown in the picture below.
+
+photo of lsusb
+
+
+
+ ### Step 4: programming the VSDSquadron FPGA Mini (FM) board:
