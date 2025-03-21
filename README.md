@@ -377,8 +377,19 @@ Expand or Collapse
 
 ### 3) The board would look like the pictures below after successfully executing the code.
 
-three photos of led blinking
+### Red Led blinking:
 
+   ![Image](https://github.com/user-attachments/assets/381f0b36-c495-40c3-ab7d-68faca58e13b) 
+
+### Blue Led blinking:
+   ![Image](https://github.com/user-attachments/assets/416a4ca5-19ab-4d2a-8bd2-90200d6355b4) 
+
+### Green Led blinking:
+  ![Image](https://github.com/user-attachments/assets/f67d1fdd-d7db-48fe-8772-654d6235223a)
+
+### No Led blinking:
+  ![Image](https://github.com/user-attachments/assets/dda59a7a-1e0f-4f4b-8d76-b615e940a48c)
+  
  </details>
  </details>
  
